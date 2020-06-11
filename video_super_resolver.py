@@ -66,7 +66,7 @@ def evaluate(video_path):
     # # ###=============RESTORE G======================================================
     sess = tf.Session(config=tf.ConfigProto(allow_soft_placement=True, log_device_placement=False))
     tl.layers.initialize_global_variables(sess)
-    tl.files.load_and_assign_npz(sess=sess, name=os.path.join(checkpoint_dir, 'g_srgan_L1.npz'), network=net_g)
+    tl.files.load_and_assign_npz(sess=sess, name=os.path.join(checkpoint_dir, 'g_srgan.npz'), network=net_g)
     write_video_filepath=os.path.join(os.getcwd(), 'videos', output_video_name)
     writer = skvideo.io.FFmpegWriter(write_video_filepath,inputdict={'-r': fps},outputdict={'-r': fps,'-vcodec': 'libx264','-pix_fmt': 'yuv420p'})    
     for i, frame in enumerate(videogen):        
