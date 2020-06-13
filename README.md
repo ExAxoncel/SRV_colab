@@ -31,6 +31,7 @@ This files lists the video files present in the videos folder. The repository as
 
 ## TODO
 Add option for magnification factor.
+
 (But now I am focusing on trying another method https://github.com/ExAxoncel/video2x so it might be emmmm...
 
 ## FAQs
