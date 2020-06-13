@@ -29,6 +29,10 @@ This files lists the video files present in the videos folder. The repository as
 4. Python skvideo package
 5. ffmpeg tool
 
+## TODO
+Add option for magnification factor.
+(But now I am focusing on trying another method https://github.com/ExAxoncel/video2x so it might be emmmm...
+
 ## FAQs
 ### 1. Getting memory errors
 Reduce the resolution of the input video. As this code tries to super-resolve the video by 4x, if one tries to super resolve 1080p video, one needs video card memory that can handle 1080x4 pixels. 
